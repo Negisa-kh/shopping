@@ -1,36 +1,52 @@
-
-
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+@font-face {
+  font-family: Tanha;
+  src: url("/font/Tanha.eot");
+  src: url("/font/Tanha.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/Tanha.woff") format("woff"),
+    url("/font/Tanha.ttf") format("truetype");
+  font-weight: normal;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  font-family: "Tanha";
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-
-.bg1{
-background-image: url(../public/asaat/12.gif);
-/* background-repeat:no-repeat;
-background-size: cover; */
+.flash-sales-container {  
+  max-width: 1200px; 
+  /* margin: 0 auto;   */
+  /* margin-top: 2rem; */
+  padding: 0 16px;  
+}  
+.CategoryList-container{
+  max-width: 1400px; 
+  padding: 16px 16px;  
 
 }
-.bg2{
-background-image: url(../public/asaat/12.gif);
-background-repeat:no-repeat;
-background-size: cover;
+.swiper-button-prev,
+.swiper-button-next {
+  color: #4a5568; 
+  background-color: rgba(255, 255, 255, 0.575); 
+  border-radius: 50%; 
+  width: 40px; 
+  height: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: 10px; 
+}
+
+.swiper-button-next {
+  right: 10px; 
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px; 
 }
